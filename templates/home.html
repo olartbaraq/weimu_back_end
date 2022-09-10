@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>main page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/styles/home.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="menu-btn">
+                    <span class="menu-btn__burger"></span>
+                </div>
+                <div class="whole-page">
+                    <div class="website-content">
+                        <div class="image-container">
+                            <img src={{ result.image_link }} alt={{ result.alt_desc }}>
+                                <p><span>alt_desc: {{ result.alt_desc }}</span></p>
+                                <p>image by {{ result.first_name }} {{ result.lastname }}</p>
+                        </div>
+                        <div class="track-container">
+                            <div class="track-name">
+                                <iframe style="border-radius:12px" src={{ result.url }} width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                            <p>{{ result.name }}</p>
+                        </div>
+                        <div class="weather-container">
+                            
+                            <p><span>Location: </span>{{ result.location_name }}</p>
+                            <p><span>Cloud: </span>{{ result.cloud }}</p>
+                            <p><span>temp: </span>{{ result.temp_c }} <span>&#8451</span></p>
+                            
+                        </div>
+                    </div>
+                    <div class="history-content">
+
+                    </div>
+                </div>
+            </header>
+            <footer>
+                <p>
+                    project designed and created by Akanbi Mubaraq &copy; 2022
+                </p>
+            </footer>
+        </main>
+        
+        <script src="../static/script/main.js" async defer></script>
+    </body>
+</html>
